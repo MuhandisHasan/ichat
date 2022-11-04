@@ -1,0 +1,48 @@
+
+
+/* Welcome page */
+
+.welcome-container {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.welcome-img {
+
+	width: 90%;
+
+}
+
+.welcome {
+
+	color: var(--color2);
+
+}
+
+.sub-welcome {
+
+	text-align: center;
+	width: 80%;
+	font-size: 17px;
+
+}
+
+.btn-welcome {
+
+	width: 90%;
+	border-radius: 999px;
+	background: var(--color3);
+	border: none;
+	padding: 10px 0;
+
+}
+
+.btn-welcome:hover {
+
+	background: var(--color4);
+
+}

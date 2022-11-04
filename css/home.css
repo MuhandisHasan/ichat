@@ -1,0 +1,102 @@
+
+.home {
+
+	padding: 0;
+
+}
+
+.chatnavbar {
+
+	background: var(--color4);
+	width: 100%;
+	display: grid;
+	grid-template-areas: "ichat ichat ichat spacee space search menus";
+
+}
+
+.ichat {
+
+	grid-area: ichat;
+
+}
+
+.space {
+
+	grid-area: spacee;
+
+}
+
+.search {
+
+	grid-area: search;
+
+}
+
+.menu {
+
+	grid-area: menus;
+
+}
+
+.bi-search, .bi-three-dots-vertical {
+
+	font-size: 20px;
+
+}
+
+.main-logo {
+
+	width: 35px;
+
+}
+
+.requests {
+
+	background: var(--color1);
+	width: 100%;
+	display: grid;
+	grid-template-areas: "req-icon req-h req-h req-h req-h req-amount";
+	border-bottom: 1px solid var(--color5);
+	transition: background 100ms linear;
+
+}
+
+.requests:hover {
+
+	background: var(--color6);
+
+}
+
+.req-icon {
+
+	grid-area: req-icon;
+
+}
+
+.bi-envelope-paper-fill {
+
+	background: var(--color4);
+	border-radius: 50px;
+
+}
+
+
+.req-h {
+
+	grid-area: req-h;
+
+}
+
+.req-amount {
+
+	grid-area: req-amount;
+	background: var(--color4);
+	border-radius: 50px;
+
+}
+
+.req-icon, .req-amount {
+
+	margin: auto;
+
+}

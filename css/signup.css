@@ -1,0 +1,53 @@
+
+.signup-png {
+
+	width: 75%;
+	margin: 0 auto;
+
+}
+
+.signup-form {
+
+	width: 100%;
+	text-align: center;
+
+}
+
+.signup-page {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+
+}
+
+
+.btn-signup {
+
+	width: 90%;
+	border-radius: 999px;
+	border: none;
+	padding: 10px 0;
+	margin: 0 auto;
+	background: var(--color3);
+
+}
+
+.btn-signup:hover {
+
+	background: var(--color4);
+
+}
+
+.login {
+
+	color: var(--color2);
+
+}
+
+.login:hover {
+
+	color: #b8ebff;
+
+}
