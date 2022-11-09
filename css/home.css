@@ -56,6 +56,7 @@
 	width: 100%;
 	display: grid;
 	grid-template-areas: "req-icon req-h req-h req-h req-h req-amount";
+	grid-template-columns: repeat(6, 1fr);
 	border-bottom: 1px solid var(--color5);
 	transition: background 100ms linear;
 
@@ -70,13 +71,17 @@
 .req-icon {
 
 	grid-area: req-icon;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: var(--color4);
+	display: grid;
 
 }
 
 .bi-envelope-paper-fill {
 
-	background: var(--color4);
-	border-radius: 50px;
+	margin: auto;
 
 }
 
@@ -100,3 +105,74 @@
 	margin: auto;
 
 }
+
+.chat-room {
+
+	width: 100%;
+	display: grid;
+	grid-template-areas: 'chat-profile room-detail room-detail room-detail room-detail room-detail';
+	grid-template-columns: repeat(6, 1fr);
+	border-bottom: 1px solid var(--color5);
+
+}
+
+.chat-room-profile {
+
+	grid-area: chat-profile;
+	width: 75%;
+	margin: auto;
+	background: var(--color5);
+	clip-path: circle();
+	padding: 5px;
+
+}
+
+.chat-room-details {
+
+	grid-area: room-detail;
+	width: 100%;
+	height: 90%;
+	display: grid;
+	grid-template-areas: 'username username username username message-amount' 'last-message last-message last-message last-message message-time';
+	grid-template-columns: repeat(5, 1fr);
+
+}
+
+.chat-room-username {
+
+	grid-area: username;
+
+}
+
+.chat-room-last-message {
+
+	grid-area: last-message;
+	color: #dbdbdb;
+	
+}
+
+.chat-room-message-amount {
+
+	grid-area: message-amount;
+	background: var(--color4);
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+
+}
+
+.chat-room-message-amount span {
+
+	font-size: 15px;
+
+}
+
+.chat-room-message-time {
+
+	grid-area: message-time;
+	color: #dbdbdb;
+	
+}
+
+
+
