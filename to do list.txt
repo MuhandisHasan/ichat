@@ -1,0 +1,9 @@
+Function list
+
+---------Home.html------------
+
+Make all pages that are there in 3bar.
+
+and linking to chat page also.
+
+--------- Search html -----------

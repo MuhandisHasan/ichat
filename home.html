@@ -21,8 +21,17 @@
       <div class="chatnavbar p-3">
         <h2 class="ichat pop-bold my-auto"><img class="main-logo m-2" src="assets/logo-white.png" alt="">IChat</h2>
         <div class="space"></div>
-        <a class="search text-decoration-none text-light m-auto"><i class="bi bi-search"></i></a>
-        <div class="menu m-auto"><i class="bi bi-three-dots-vertical"></i></div>
+        <a class="search text-decoration-none text-light m-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="bi bi-search"></i></a>
+        <div class="dropdown menu m-auto">
+          <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-three-dots-vertical text-light"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
       </div>
       <div class="requests py-3" id="requests">
         <div class="req-icon"><i class="bi bi-envelope-paper-fill m-auto p-2"></i></div>
@@ -30,25 +39,69 @@
         <div class="req-amount p-2"><span>123</span></div>
       </div>
       <div class="chat-rooms-list">
-        <div class="chat-room py-2">
+        <div class="chat-room py-2" id="room1">
           <img src="assets/avatars/avatar (2).png" alt="" class="chat-room-profile">
-          <div class="chat-room-details">
+          <div class="chat-room-details my-auto">
             <h5 class="chat-room-username my-auto pop-bold">Daniel</h5>
             <p class="chat-room-last-message my-auto">Will you attend my party ?</p>
             <div class="chat-room-message-amount m-auto d-flex"><span class="m-auto">123</span></div>
             <p class="chat-room-message-time m-auto">19:20</p>
           </div>
         </div>
-         <div class="chat-room py-2">
+         <div class="chat-room py-2" id="room2">
           <img src="assets/avatars/avatar (3).png" alt="" class="chat-room-profile">
-          <div class="chat-room-details">
+          <div class="chat-room-details my-auto">
             <h5 class="chat-room-username my-auto pop-bold">Jack</h5>
             <p class="chat-room-last-message my-auto">How ya doin' ?</p>
             <div class="chat-room-message-amount m-auto d-flex"><span class="m-auto">23</span></div>
             <p class="chat-room-message-time m-auto">17:30</p>
           </div>
         </div>
+        <!-- If there is no request or chat -->
+        <!-- <div class="start-chat">
+          <img class="start-chat-img" src="assets/start-chat.png" alt="">
+          <a class="py-2 px-3 pop-bold text-decoration-none btn btn-primary start-chat-btn">Start a chat !</a>
+        </div> -->
       </div>
+      <!-- Off canvas -->
+
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+          <i class="bi bi-x" data-bs-dismiss="offcanvas" aria-label="Close"></i> -->
+          <div class="input-group mb-3">
+            <span class="input-group-text search-bar-icons" id="search-icon"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control search-bar" placeholder="Search User" aria-label="Username" id="search-bar" aria-describedby="basic-addon1">
+            <span class="input-group-text search-bar-icons" data-bs-dismiss="offcanvas" aria-label="Close" id="close"><i class="bi bi-x-lg"></i></span>
+          </div>
+        </div>
+        <div class="offcanvas-body small">
+          <!-- Body -->
+          <div class="requests py-3" id="requests">
+            <div class="req-icon"><i class="bi bi-plus-circle-fill m-auto p-2"></i></div>
+            <h5 class="req-h my-auto">Start a chat</h5>
+            <!-- <div class="req-amount p-2"><span>123</span></div> -->
+          </div>
+          <div class="chat-rooms-list">
+            <div class="chat-room py-2" id="room1">
+              <img src="assets/avatars/avatar (2).png" alt="" class="chat-room-profile">
+              <div class="chat-room-details my-auto">
+                <h5 class="chat-room-username my-auto pop-bold">Daniel</h5>
+                <p class="chat-room-last-message my-auto">Will you attend my party ?</p>
+                <div class="chat-room-message-amount m-auto d-flex"><span class="m-auto">123</span></div>
+                <p class="chat-room-message-time m-auto">19:20</p>
+              </div>
+            </div>
+             <div class="chat-room py-2" id="room2">
+              <img src="assets/avatars/avatar (3).png" alt="" class="chat-room-profile">
+              <div class="chat-room-details my-auto">
+                <h5 class="chat-room-username my-auto pop-bold">Jack</h5>
+                <p class="chat-room-last-message my-auto">How ya doin' ?</p>
+                <div class="chat-room-message-amount m-auto d-flex"><span class="m-auto">23</span></div>
+                <p class="chat-room-message-time m-auto">17:30</p>
+              </div>
+            </div>
+          </div>
 
     </div>
 
